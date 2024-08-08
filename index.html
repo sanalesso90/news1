@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Beautiful News Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="navbar desktop-nav">
+        <div class="nav-left">
+            <a href="#">News</a>
+            <a href="#">Politics</a>
+            <a href="#">Live</a>
+            <a href="#">Economy</a>
+        </div>
+        <div class="nav-center">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-right">
+            <a href="#"><img src="./img/user-profile_4803060.png" alt="Profile" class="icon"></a>
+            <a href="#"><img src="./img/search.png" alt="Contact" class="icon"></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav" class="navbar mobile-nav" role="navigation">
+        <div class="nav-center">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Politics</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Live</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Economy</a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><img src="./img/user-profile_4803060.png" alt="Profile" class="icon"></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><img src="./img/search.png" alt="Contact" class="icon"></a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <a href="#mobile-nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+            </svg>
+        </a>
+
+        <!-- Animated Background Element -->
+        <div class="splash"></div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-carousel">
+            <div class="hero-carousel-item active" style="background-image: url('./img/hero1.jpeg');"></div>
+            <div class="hero-carousel-item" style="background-image: url('./img/hero2.jpeg');"></div>
+            <div class="hero-carousel-item" style="background-image: url('./img/hero3.jpeg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the World</h1>
+            <p class="hero-subtitle">Stay Informed, Stay Ahead</p>
+            <button class="hero-cta">Explore Now</button>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="news-content-wrapper">
+            <h1 class="news-heading">News</h1>
+            
+            <div class="news-filters">
+                <a href="#" class="filter-button active">All</a>
+                <a href="#" class="filter-button">Announcement</a>
+                <a href="#" class="filter-button">New release</a>
+                <a href="#" class="filter-button">Blog</a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-item large" data-category="announcement">
+                    <img src="./img/trump.webp" alt="Volleyball player serving" class="news-image">
+                    <div class="news-content">
+                        <h2 class="news-title">Volleyball player demonstrates serving technique</h2>
+                        <p class="news-excerpt">A professional athlete showcases proper form during a training session...</p>
+                    </div>
+                </article>
+                <div class="news-column">
+                    <article class="news-item small" data-category="new-release">
+                        <img src="./img/harris.jpeg" alt="Celebrating volleyball players" class="news-image">
+                        <div class="news-content">
+                            <h2 class="news-title">Team celebrates victory in recent match</h2>
+                            <p class="news-excerpt">Players share a joyous moment</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- New Additional News Grid -->
+            <div class="additional-news-grid">
+                <div class="news-item foundation" data-category="blog">
+                    <img src="./img/trump1.jpeg" alt="LOVB Foundation" class="news-image">
+                    <div class="news-content">
+                        <h2 class="news-title">Volleyball Matters: The LOVB Foundation</h2>
+                        <p class="news-category">FOUNDATION</p>
+                        <a href="#" class="news-cta">Learn More</a>
+                    </div>
+                </div>
+                <div class="news-item clubs" data-category="announcement">
+                    <img src="./img/toge.jpeg" alt="Junior Clubs" class="news-image">
+                    <div class="news-content">
+                        <h2 class="news-title">Our junior clubs are pushing the next level of player</h2>
+                        <p class="news-category">CLUBS</p>
+                        <a href="#" class="news-cta">Join Us</a>
+                    </div>
+                </div>
+                <div class="news-item store" data-category="new-release">
+                    <img src="./img/trump3.jpeg" alt="LOVB Fit" class="news-image">
+                    <div class="news-content">
+                        <h2 class="news-title">Get your LOVB fit</h2>
+                        <p class="news-category">STORE</p>
+                        <a href="#" class="news-cta">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="page-container">
+        <h1 class="page-title">Exclusive Interviews</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Carousel items will be dynamically added here -->
+            </div>
+            <button class="nav-btn prev">&lt;</button>
+            <button class="nav-btn next">&gt;</button>
+        </div>
+    </div>
+
+    <div class="fullscreen-video">
+        <video controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="close-btn">&times;</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+});
+    </script>
+</body>
+</html>
